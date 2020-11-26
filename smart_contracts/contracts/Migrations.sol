@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.8;
 
+/**
+* standard truffle implementation
+*/
+
 contract Migrations {
   address public owner;
 
