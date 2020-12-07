@@ -52,7 +52,17 @@ contract FLY is IERC20 {
   // (for more details: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0261&from=EN).
   // FLY is the digital currency inside the new fully automatized system. IT's a ERC20-Token and has additional functions to enable
   // the automization. The following key concepts are described in the following passage:
-  //          -- TODO --
+  //
+  //    The struct Payments abstracts an executed payment and saves it inside the mapping structure paymentsDone. With this integration,
+  //    developers have additionally the option to implement a gui, which displays all payments where the users address is involved.
+  //
+  //    paymentHandlerCancelled() --> the oracle runs this function if the airline cancels a flight or if the oracle receives a "TicketCancelled"
+  //                                  event from the PassengerSystem contract.
+  //
+  //    paymentHandlerDelayed() --> if the airline changes the state of the flight "ARR_DELAYED", it is necessary to insert the duration of the delay in minutes.
+  //                                The oracle contains a method, which is checking if a comparison payment, regarding the passenger regulations article 7, 
+  //                                needs to be done. If yes this is function is called with the information about the address of the customer and the distance
+  //                                between the origins.
 
   mapping (address => uint256) private _balances;
 
