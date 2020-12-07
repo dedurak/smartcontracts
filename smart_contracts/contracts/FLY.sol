@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.24;
 
+// This is a standard interface for the ERC20 Standard implementation
+// In order to use the interface, it's required to override each function
+
 
 interface IERC20 {
   function totalSupply() external view returns (uint256);
@@ -35,11 +38,21 @@ interface IERC20 {
 /**
  * @title Standard ERC20 token
  *
+ * @author Deniz Durak
+ *
  * @dev Implementation of the basic standard token.
  * https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
  * Originally based on code by FirstBlood: https://github.com/Firstbloodio/token/blob/master/smart_contract/FirstBloodToken.sol
  */
 contract FLY is IERC20 {
+
+  // The known booking processes have been transformed in order to automatize all activities which are not as much consumer-friendly.
+  // This activities are the processes to refund the payments for a booking, following on the cancellation of the operating airline,
+  // and the processes to pay the comparison payments, regulated by the european flight passenger regulations EU 261/2004 
+  // (for more details: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0261&from=EN).
+  // FLY is the digital currency inside the new fully automatized system. IT's a ERC20-Token and has additional functions to enable
+  // the automization. The following key concepts are described in the following passage:
+  //          -- TODO --
 
   mapping (address => uint256) private _balances;
 
