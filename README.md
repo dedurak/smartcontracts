@@ -8,7 +8,7 @@ The aim is to transform the business processes into a blockchain and further to 
 
 The known booking processes have been transformed, in order to automatize all activities which are not as much consumer-friendly as the flight booking process itself, and are running with a blockchain in the backend. Thus, the process of refunding the payment for a booking, following on the cancellation of the operating airline, and the process of payimng the comparison payment, regulated by the european flight passenger regulations [EU 261/2004](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0261&from=EN), shall be fully automated.
 
-FLY is the digital currency inside the new fully automatized system. It's a ERC20-Token and has additional functions to enable the automization. The following key concepts are described in the following passage:
+FLY, an ERC20-Token with additional functions to complete  acts as the digital currency inside the new system. It's a ERC20-Token and has additional functions to enable the automization. The following key concepts are described in the following passage:
 The struct Payments abstracts an executed payment and saves it inside the mapping structure paymentsDone. With this integration, developers have additionally the option to implement a gui, which displays all payments where the users address is involved.
 
 `paymentHandlerCancelled()` --> the oracle runs this function if the airline cancels a flight or if the oracle receives a "TicketCancelled"
