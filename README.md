@@ -6,8 +6,7 @@ The aim is to transform the business processes into a blockchain and further to 
 
 ## FLY Token
 
-The known booking processes have been transformed in order to automatize all activities which are not as much consumer-friendly.
-This activities are the processes to refund the payments for a booking, following on the cancellation of the operating airline, and the processes to pay the comparison payments, regulated by the european flight passenger regulations [EU 261/2004](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0261&from=EN).
+The known booking processes have been transformed, in order to automatize all activities which are not as much consumer-friendly as the flight booking process itself, and are running with a blockchain in the backend. Thus, the process of refunding the payment for a booking, following on the cancellation of the operating airline, and the process of payimng the comparison payment, regulated by the european flight passenger regulations [EU 261/2004](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0261&from=EN), shall be fully automated.
 
 FLY is the digital currency inside the new fully automatized system. It's a ERC20-Token and has additional functions to enable the automization. The following key concepts are described in the following passage:
 The struct Payments abstracts an executed payment and saves it inside the mapping structure paymentsDone. With this integration, developers have additionally the option to implement a gui, which displays all payments where the users address is involved.
