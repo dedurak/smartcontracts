@@ -1,6 +1,6 @@
 # smartcontracts
 
-The smart contracts project the typical process landscape of an airline booking system. 
+The smart contracts represent the typical process landscape of an airline booking system. 
 The aim is to transform the business processes into a blockchain and further to advance the automation of processes, fulfilled by employees.
 
 
