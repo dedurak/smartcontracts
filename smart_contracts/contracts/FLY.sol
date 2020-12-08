@@ -63,6 +63,10 @@ contract FLY is IERC20 {
   //                                The oracle contains a method, which is checking if a comparison payment, regarding the passenger regulations article 7, 
   //                                needs to be done. If yes this is function is called with the information about the address of the customer and the distance
   //                                between the origins.
+  //
+  //    insertPayment() --> This function stores all fulfilled payments inside the mapping "paymentsDone".
+  //
+  //    searchPayments() --> in order to get an overview of payments where a client is involved, calling this fuction returns the data from "paymentsDone"
 
   mapping (address => uint256) private _balances;
 
@@ -320,7 +324,7 @@ contract FLY is IERC20 {
   }
 
 
-  // search for payments and return max.10 ( amount[], _sender[], recipient[], timestamp[])
+  // search for payments and return max. "length" items ( amount[], _sender[], recipient[], timestamp[])
   function searchPayments(uint length) public view returns (string memory, address[] memory, address[] memory, string memory)
   {
     Payments[] memory bufPayments = paymentsDone[msg.sender];
